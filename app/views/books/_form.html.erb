@@ -31,6 +31,11 @@
     <%= form.text_area :memo %>
   </div>
 
+  <div class="field">
+      <%= form.label :level_id %>
+      <%= form.collection_select :level_id, Level.all, :id, :title %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

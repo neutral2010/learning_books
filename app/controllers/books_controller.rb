@@ -25,7 +25,7 @@ class BooksController < ApplicationController
   # POST /books.json
   def create
     @book = Book.new(book_params)
-
+    # @book.level_id = フォームからきたlevel_id
     respond_to do |format|
       if @book.save
         format.html { redirect_to @book, notice: 'Book was successfully created.' }
@@ -63,12 +63,13 @@ class BooksController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_book
-      @book = Book.find(params[:id])
-    end
+  def set_book
+    @book = Book.find(params[:id])
+    puts params[:id]
+  end
 
     # Only allow a list of trusted parameters through.
-    def book_params
-      params.require(:book).permit(:title, :author, :publisher, :memo)
-    end
+  def book_params
+    params.require(:book).permit(:title, :author, :publisher, :memo, :level_id)
+  end
 end
