@@ -1,24 +1,15 @@
-# README
+# 課題アプリケーション「Learning　Books」
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+「学習に関する本の管理を行うアプリ」
+大名エンジニアカレッジ Ruby on Rails基礎コース
 
-Things you may want to cover:
+「Railsの教科書」読書会の課題になります。
 
-* Ruby version
 
-* System dependencies
+***
 
-* Configuration
 
-* Database creation
+* Ruby 3.0.0
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails 6.1.0
